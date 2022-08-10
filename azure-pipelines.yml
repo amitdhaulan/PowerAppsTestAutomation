@@ -11,7 +11,7 @@ resources:
       name: microsoft/PowerAppsTestAutomation
       ref: master
       # Name of the GitHub OAuth ADO Service Connection
-      endpoint: <ADO GitHub OAuth Service Connection Name>
+      endpoint: github.com_amitdhaulan
 
 parameters:
  - name: image
@@ -56,7 +56,7 @@ jobs:
     value: true
     # FileName where TestAutomationURLs are stored in JSON format
   - name: TestUrlFileName 
-    value: TestAutomationURLs.json
+    value: TestURLs.json
     # Project name of repo containing TestAutomationURLs (spaces should be encoded as %20)
     # Example: Contoso Test Framework --> Contoso%20Test%20Framework
   - name: LocalProjectName
